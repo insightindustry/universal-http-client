@@ -52,10 +52,10 @@ The Universal HTTP Client
          :target: http://universal-http-client.readthedocs.io/en/latest/?badge=develop
          :alt: Documentation Status (ReadTheDocs)
 
-The **Universal HTTP Client** is designed to add multiple HTTP library support
-to your libraries with an internally consistent and naturally extensible API
-with additional robust features like configurable retry/back-off support. Built-in
-support for:
+The **Universal HTTP Client** is designed to add flexible support for multiple
+HTTP libraries to your Python code using an internally consistent and naturally
+extensible API with additional robust features like configurable retry/back-off
+support. Built-in support for:
 
 * `urlfetch <https://pypi.org/project/urlfetch/>`_ (used on the Google Cloud Platform)
 * `requests <https://pypi.org/project/requests/2.7.0/>`_ (the Python community's favorite HTTP library)
