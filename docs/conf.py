@@ -24,7 +24,7 @@ import sphinx_rtd_theme
 version_dict = {}
 with open(os.path.join(os.path.dirname(__file__),
                        '../',
-                       'walkscore',
+                       'universal_http_client',
                        '__version__.py')) as version_file:
     exec(version_file.read(), version_dict)                                     # pylint: disable=W0122
 
