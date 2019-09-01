@@ -14,11 +14,6 @@ import time
 from validator_collection import validators, checkers
 
 
-CA_BUNDLE_PATH = os.path.join(
-    os.path.dirname(__file__), "data/ca-certificates.crt"
-)
-
-
 HTTP_METHODS = ['GET',
                 'HEAD',
                 'OPTIONS',
