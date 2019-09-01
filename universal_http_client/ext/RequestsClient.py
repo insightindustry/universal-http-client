@@ -296,7 +296,7 @@ class RequestsClient(HTTPClient):
             )
         except requests.RequestException as error:
             raise errors.HTTPLibraryError(
-                "The Urlfetch library generated an error for an indeterminate "
+                "The requests library generated an error for an indeterminate "
                 "reason."
             )
 
