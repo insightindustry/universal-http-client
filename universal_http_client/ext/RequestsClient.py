@@ -302,7 +302,8 @@ class RequestsClient(HTTPClient):
 
         response = HTTPResponse(content = result.content,
                                 status_code = result.status_code,
-                                headers = result.headers)
+                                headers = result.headers,
+                                cookies = result.cookies)
 
         return response, response.status_code
 

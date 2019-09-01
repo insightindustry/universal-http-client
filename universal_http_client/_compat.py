@@ -42,6 +42,7 @@ dict = OrderedDict
 if is_py2:
     import regex
     import cStringIO
+    from cookielib import CookieJar, Cookie
     StringIO = cStringIO.StringIO
     re = regex
     builtin_str = str
@@ -110,6 +111,7 @@ if is_py2:
 elif is_py3:
     import re
     import io
+    from http.cookiejar import CookieJar, Cookie
     StringIO = io.StringIO
     builtin_str = str
     str = str

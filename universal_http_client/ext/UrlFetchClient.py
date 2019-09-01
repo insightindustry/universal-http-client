@@ -222,9 +222,17 @@ class UrlFetchClient(HTTPClient):
                 "reason."
             )
 
+        cookies = result.cookies
+        cookiejar = None
+        if cookies:
+            cookiejar = CookieJar()
+            for cookie in result.cookies:
+                cookiejar.set_cookie(cookie)
+
         response = HTTPResponse(content = result.content,
                                 status_code = result.status_code,
-                                headers = result.headers)
+                                headers = result.headers,
+                                cookies = cookiejar)
 
         return response, response.status_code
 
