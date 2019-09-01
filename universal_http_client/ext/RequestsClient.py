@@ -88,7 +88,7 @@ class RequestsClient(HTTPClient):
 
     def __init__(self,
                  timeout = None,
-                 max_redirects = 0,
+                 allow_redirects = True,
                  length_limit = None,
                  random_user_agent = False,
                  **kwargs):
